@@ -1,2 +1,3 @@
-# emijiFinder
-Created with CodeSandbox
+# Emoji Finder
+
+This is a Web App build using ReactJS 
