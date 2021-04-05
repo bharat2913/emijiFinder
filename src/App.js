@@ -64,6 +64,8 @@ export default function App() {
     // processing
     var meaning = emojiDictionary[emoji];
     setMeaningInput(meaning); // react call to show output
+
+
   }
 
   return (
@@ -72,13 +74,18 @@ export default function App() {
 
       {emojiweknow.map(function (emoji) {
         return (
-          <span
+          <div
             onClick={() => emojiClickHandler(emoji)}
-            style={{ fontSize: "2rem", padding: "1rem", cursor: "pointer" }}
+            style={{
+              fontSize: "2rem", 
+              padding: "1rem", 
+              cursor: "pointer",
+              display: "ruby-base" 
+            }}
             key={emoji}
           >
             {emoji}
-          </span>
+          </div>
         );
       })}
 
